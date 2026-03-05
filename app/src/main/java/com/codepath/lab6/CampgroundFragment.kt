@@ -10,10 +10,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
+import kotlinx.serialization.json.Json
 import okhttp3.Headers
 import org.json.JSONException
 import kotlin.let
 
+// Helper function for JSON parsing
+fun createJson() = Json {
+    isLenient = true
+    ignoreUnknownKeys = true
+    useAlternativeNames = false
+}
 private const val TAG = "CampgroundFragment"
 private const val API_KEY = BuildConfig.API_KEY
 private const val CAMPGROUND_URL =

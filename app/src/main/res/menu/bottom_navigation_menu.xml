@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_parks"
+        android:icon="@drawable/baseline_park_24"
+        android:title="Parks" />
+
+    <item
+        android:id="@+id/navigation_campgrounds"
+        android:icon="@drawable/outline_camping_24"
+        android:title="Campgrounds" />
+
+</menu>
